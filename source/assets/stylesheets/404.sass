@@ -1,0 +1,28 @@
+@import compass
+@import _vendor/normalize
+@import _typography
+
+html,
+body#error-page
+  min-height: 100%
+
+html
+  background: transparent none
+
+body#error-page
+  +background-image(radial-gradient(#036da0, darken(#036da0, 10%)))
+  background:
+    repeat: no-repeat
+    size: cover
+  color: white
+
+  .page-container
+    width: 528px
+    padding:
+      top: 250px
+    margin:
+      left: auto
+      right: auto
+
+    h1
+      font-weight: 400
