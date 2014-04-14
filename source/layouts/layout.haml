@@ -22,7 +22,7 @@
     = partial 'nav'
     #main{:role => 'main'}
       .row= yield
-    %footer
+    = partial 'footer'
 
     - if development?
       = javascript_include_tag 'vendor/jquery-2.0.3.min'
